@@ -44,12 +44,11 @@
   text-decoration: underline;
 }
 
-/* Center the buttons at the top */
 .top-buttons {
   display: flex;
-  justify-content: center; /* Center the buttons horizontally */
-  gap: 10px; /* Space between the buttons */
-  margin-bottom: 20px; /* Add some space below the buttons */
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
 .back-button, .kanbas-button {
