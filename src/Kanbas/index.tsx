@@ -19,7 +19,7 @@ const Kanbas = () => {
               </td>
               <td valign="top">
                 <Routes>
-                  <Route path="./" element={<Navigate to="Accounts/SignIn" replace/>} />
+                  <Route path="/" element={<Navigate to="Accounts/SignIn" replace/>} />
                   <Route path="Accounts/*" element={<Accounts />} />
                   <Route path="Dashboard/*" element={<Dashboard />} />
                   <Route path="Courses/*" element={<Courses />} />
