@@ -8,8 +8,8 @@ const Kanbas = () => {
   return (
     <div className="kanbas">
       <h1>Kanbas App</h1>
-      <h4>By Shreyans Mulkutkar</h4>
-      <h6>CS5610 - 20596</h6>
+      {/* <h4>By Shreyans Mulkutkar</h4>
+      <h6>CS5610 - 20596</h6> */}
       <div>
         <table>
           <tbody>
