@@ -4,8 +4,8 @@ export default function AssignmentEditor() {
       <label htmlFor="wd-name">Assignment Name</label>
       <input id="wd-name" value="A1 - ENV + HTML" /><br /><br />
 
-      <textarea id="wd-description">
-        The assignment is available online. Submit a link to the landing page of
+      <textarea id="wd-description" rows={6} cols={70}>
+        The assignment is available online. Submit a link to the landing page of your website.
       </textarea>
       <br />
       
