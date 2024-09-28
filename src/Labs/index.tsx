@@ -8,6 +8,7 @@ import Images from './Lab 1/images';
 import { HashRouter, Link, Route, Routes } from 'react-router-dom';
 import LabsNavbar from './labsNavbar';
 import Lab1 from './Lab 1';
+import Lab2 from './Lab 2';
 
 const LabWork = () => {
     return (
@@ -33,7 +34,7 @@ const LabWork = () => {
             <Routes>
                 <Route path="/" element={<h3>Use the above navbar to view different components.</h3>} />
                 <Route path="lab1/*" element={<Lab1 />} />
-                {/* <Route path="Lab 2" element={<Lab2 />} /> */}
+                <Route path="lab2/*" element={<Lab2 />} />
             </Routes>
 
             {/* <Routes>
