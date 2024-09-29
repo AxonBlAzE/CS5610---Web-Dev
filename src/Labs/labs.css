@@ -4,7 +4,7 @@
 }
 
 .navbar {
-  background-color: #1c1212;
+  /* background-color: #1c1212; */
   padding: 10px 15px;
   display: flex;
   justify-content: flex-start;
@@ -34,13 +34,13 @@
 }
 
 .navbar-links a {
-  color: white;
+  /* color: white; */
   text-decoration: none;
   font-size: 16px;
 }
 
 .navbar-links a:hover {
-  color: #ddd;
+  color: #532222;
   text-decoration: underline;
 }
 
@@ -51,7 +51,8 @@
   margin-bottom: 20px;
 }
 
-.back-button, .kanbas-button {
+.back-button,
+.kanbas-button {
   padding: 8px 15px;
   border: none;
   text-decoration: none;
@@ -78,7 +79,12 @@
   background-color: #ff9900;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   width: 100%;
   text-align: left;
   margin: 20px 0 10px 0;
