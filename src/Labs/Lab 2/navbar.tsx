@@ -8,6 +8,9 @@ const Navbar = () => {
           <Link to="./">CSS Practice</Link>
         </li>
         <li>
+          <Link to="icons">React Icons</Link>
+        </li>
+        <li>
           <Link to="bootstrap">Bootstrap</Link>
         </li>
       </ul>

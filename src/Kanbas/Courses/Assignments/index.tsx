@@ -1,4 +1,8 @@
-import { FaSearch } from "react-icons/fa";
+import { BsGripVertical } from "react-icons/bs";
+import { FaCalendarAlt, FaSearch } from "react-icons/fa";
+import LessonControlButtons from "../Modules/LessonControlsButton";
+import { IoAdd, IoEllipsisVertical } from "react-icons/io5";
+import { IoMdBookmarks } from "react-icons/io";
 
 export default function Assignments() {
   return (
@@ -35,74 +39,116 @@ export default function Assignments() {
 
       <br />
 
-      <h3 id="wd-assignments-title">
-        ASSIGNMENTS 40% of Total <button>+</button>
-      </h3>
+      <ul id="wd-modules" className="list-group rounded-0">
+        <li className="wd-module list-group-item p-0 mb-5 fs-5 border-grey">
+          <div className="wd-title p-3 ps-2 bg-secondary d-flex align-items-center">
+            <BsGripVertical className="me-2 fs-3" />
 
-      <ul id="wd-assignment-list">
-        <li className="wd-assignment-list-item">
-          <a
-            className="wd-assignment-link"
-            href="#/Kanbas/Courses/1234/Assignments/Editor"
-          >
-            A1 - ENV + HTML
-          </a>
-          <p className="assignment-description">
-            Description: Create a simple web page using HTML and CSS.
-          </p>
-          <p className="assignment-due-date">Due Date: March 15, 2024</p>
-        </li>
+            <h2 className="mb-0 me-3">Assignments</h2>
 
-        <li className="wd-assignment-list-item">
-          <a
-            className="wd-assignment-link"
-            href="#/Kanbas/Courses/1234/Assignments/Editor"
-          >
-            A2 - CSS Basics
-          </a>
-          <p className="assignment-description">
-            Description: Learn the basics of CSS styling.
-          </p>
-          <p className="assignment-due-date">Due Date: March 22, 2024</p>
-        </li>
+            <h3
+              className="border border-dark rounded-pill px-3 py-1 mb-0 w-50"
+              style={{ maxWidth: 190 }}
+            >
+              40% of total
+            </h3>
 
-        <li className="wd-assignment-list-item">
-          <a
-            className="wd-assignment-link"
-            href="#/Kanbas/Courses/1234/Assignments/Editor"
-          >
-            A3 - JavaScript Essentials
-          </a>
-          <p className="assignment-description">
-            Description: Understand core JavaScript concepts.
-          </p>
-          <p className="assignment-due-date">Due Date: March 29, 2024</p>
-        </li>
+            <IoAdd className="me-2 fs-3" />
+            <IoEllipsisVertical className="me-2 fs-3" />
+          </div>
+          <ul className="wd-lessons list-group rounded-0">
+            <a
+              className="wd-assignment-link text-decoration-none"
+              href="#/Kanbas/Courses/1234/Assignments/Editor"
+            >
+              <li className="wd-lesson list-group-item p-3 ps-1">
+                <div className="d-flex align-items-center">
+                  <BsGripVertical className="me-2 fs-3" />
+                  <IoMdBookmarks className="me-2 fs-3" />
+                  <div className="flex-grow-1">
+                    <div className="fw-bold text-dark">A1</div>
+                    <div className="small text-muted">
+                      Description: Create a simple web page using HTML and CSS.
+                    </div>
+                    <div className="small text-danger mt-1">
+                      <FaCalendarAlt className="me-1" />
+                      Due Date: March 15, 2025
+                    </div>
+                  </div>{" "}
+                  <LessonControlButtons />
+                </div>
+              </li>
+            </a>
 
-        <li className="wd-assignment-list-item">
-          <a
-            className="wd-assignment-link"
-            href="#/Kanbas/Courses/1234/Assignments/Editor"
-          >
-            A4 - React Introduction
-          </a>
-          <p className="assignment-description">
-            Description: Introduction to React and its components.
-          </p>
-          <p className="assignment-due-date">Due Date: April 5, 2024</p>
-        </li>
+            <a
+              className="wd-assignment-link text-decoration-none"
+              href="#/Kanbas/Courses/1234/Assignments/Editor"
+            >
+              <li className="wd-lesson list-group-item p-3 ps-1">
+                <div className="d-flex align-items-center">
+                  <BsGripVertical className="me-2 fs-3" />
+                  <IoMdBookmarks className="me-2 fs-3" />
+                  <div className="flex-grow-1">
+                    <div className="fw-bold text-dark">A2</div>
+                    <div className="small text-muted">
+                      Description: Create a simple web page using HTML and CSS.
+                    </div>
+                    <div className="small text-danger mt-1">
+                      <FaCalendarAlt className="me-1" />
+                      Due Date: March 22, 2025
+                    </div>
+                  </div>{" "}
+                  <LessonControlButtons />
+                </div>
+              </li>
+            </a>
 
-        <li className="wd-assignment-list-item">
-          <a
-            className="wd-assignment-link"
-            href="#/Kanbas/Courses/1234/Assignments/Editor"
-          >
-            A5 - API Integration
-          </a>
-          <p className="assignment-description">
-            Description: Learn how to integrate APIs in your application.
-          </p>
-          <p className="assignment-due-date">Due Date: April 12, 2024</p>
+            <a
+              className="wd-assignment-link text-decoration-none"
+              href="#/Kanbas/Courses/1234/Assignments/Editor"
+            >
+              <li className="wd-lesson list-group-item p-3 ps-1">
+                <div className="d-flex align-items-center">
+                  <BsGripVertical className="me-2 fs-3" />
+                  <IoMdBookmarks className="me-2 fs-3" />
+                  <div className="flex-grow-1">
+                    <div className="fw-bold text-dark">A3</div>
+                    <div className="small text-muted">
+                      Description: Create a simple web page using HTML and CSS.
+                    </div>
+                    <div className="small text-danger mt-1">
+                      <FaCalendarAlt className="me-1" />
+                      Due Date: March 26, 2025
+                    </div>
+                  </div>{" "}
+                  <LessonControlButtons />
+                </div>
+              </li>
+            </a>
+
+            <a
+              className="wd-assignment-link text-decoration-none"
+              href="#/Kanbas/Courses/1234/Assignments/Editor"
+            >
+              <li className="wd-lesson list-group-item p-3 ps-1">
+                <div className="d-flex align-items-center">
+                  <BsGripVertical className="me-2 fs-3" />
+                  <IoMdBookmarks className="me-2 fs-3" />
+                  <div className="flex-grow-1">
+                    <div className="fw-bold text-dark">A4</div>
+                    <div className="small text-muted">
+                      Description: Create a simple web page using HTML and CSS.
+                    </div>
+                    <div className="small text-danger mt-1">
+                      <FaCalendarAlt className="me-1" />
+                      Due Date: March 30, 2025
+                    </div>
+                  </div>{" "}
+                  <LessonControlButtons />
+                </div>
+              </li>
+            </a>
+          </ul>
         </li>
       </ul>
     </div>

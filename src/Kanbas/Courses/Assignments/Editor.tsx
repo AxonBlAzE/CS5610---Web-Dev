@@ -1,8 +1,10 @@
-import { FaCalendarAlt } from "react-icons/fa";
-
 export default function AssignmentEditor() {
   return (
-    <div id="wd-assignments-editor" className="container mt-2">
+    <div
+      id="wd-assignments-editor"
+      className="container mt-1 overflow-auto"
+      style={{ maxHeight: 700 }}
+    >
       <div className="card">
         <div className="card-body">
           <label htmlFor="wd-name">Assignment Name</label>
@@ -169,6 +171,25 @@ export default function AssignmentEditor() {
                 />
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      {/* 2 buttons one for submit other cancel */}
+      <div
+        className="buttons-container"
+        style={{
+          display: "flex",
+          justifyContent: "right",
+          padding: "10px",
+        }}
+      >
+        <div className="row m-2">
+          <div className="col p-1">
+            <button className="btn">Cancel</button>
+          </div>
+          <div className="col p-1">
+            <button className="btn btn-danger">Submit</button>
           </div>
         </div>
       </div>

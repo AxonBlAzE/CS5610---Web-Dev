@@ -39,7 +39,7 @@ export default function CoursesNavigation() {
         Quizzes
       </Link>
       <Link
-        to="/KanbasCourses/1234/Grades"
+        to="/Kanbas/Courses/1234/Grades"
         className="list-group-item text-danger border border-0"
       >
         Grades

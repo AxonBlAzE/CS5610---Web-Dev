@@ -19,7 +19,7 @@ export default function Courses() {
         <CoursesNavigation />
         <div className="d-none d-md-block w-100 vh-100">
           <Routes>
-            <Route path="/" element={<Navigate to="Home" />} />
+            <Route path="/" element={<Navigate to="./1234/Home" />} />
             <Route path="/1234/Home" element={<Home />} />
             <Route path="/1234/Modules" element={<Modules />} />
             <Route path="/1234/Assignments" element={<Assignments />} />
