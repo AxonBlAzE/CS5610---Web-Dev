@@ -60,7 +60,7 @@ const LandingPage = () => {
           />
           <TableRow
             name="A2"
-            description="I gained familiarity with different concepts of CSS and Bootstrap through lab work and utilized these skills to style our website. Additionally, I improved the UI of my Kanbas application by integrating CSS, Bootstrap, and React Icons, making it look more like the original Canvas web app."
+            description="Gained familiarity with different concepts of CSS and Bootstrap through lab work and utilized these skills to style our website. Additionally, I improved the UI of my Kanbas application by integrating CSS, Bootstrap, and React Icons, making it look more like the original Canvas web app."
             url="https://a2--cs5610-shreyansmulkutkar-assignments.netlify.app/"
           />
           <TableRow name="A3" description="Coming Soon..." url="" />
