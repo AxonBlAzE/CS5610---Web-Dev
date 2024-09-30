@@ -1,88 +1,177 @@
+import { FaCalendarAlt } from "react-icons/fa";
+
 export default function AssignmentEditor() {
   return (
-    <div id="wd-assignments-editor">
-      <label htmlFor="wd-name">Assignment Name</label>
-      <input id="wd-name" value="A1 - ENV + HTML" /><br /><br />
+    <div id="wd-assignments-editor" className="container mt-2">
+      <div className="card">
+        <div className="card-body">
+          <label htmlFor="wd-name">Assignment Name</label>
+          <br />
+          <input
+            id="wd-name"
+            type="text"
+            className="form-control"
+            placeholder="A1 - ENV + HTML"
+          />
+        </div>
 
-      <textarea id="wd-description" rows={6} cols={70}>
-        The assignment is available online. Submit a link to the landing page of your website.
-      </textarea>
-      <br />
-      
-      <table>
-        <tr>
-          <td align="right" valign="top">
-            <label htmlFor="wd-points">Points</label>
-          </td>
-          <td>
-            <input id="wd-points" value={100} />
-          </td>
-        </tr>
+        <div className="card-body">
+          <label htmlFor="description" className="form-label">
+            Description
+          </label>
+          <textarea
+            className="form-control"
+            id="description"
+            rows={2}
+          ></textarea>
+        </div>
 
-        <tr>
-          <td align="right" valign="top">
-            <label htmlFor="wd-due-date">Due Date</label>
-          </td>
-          <td>
-            <input type="date" id="wd-due-date" />
-          </td>
-        </tr>
+        <div className="row m-2">
+          <div className="col-4">
+            <label htmlFor="points" className="form-label">
+              Points
+            </label>
+          </div>
+          <div className="col-8">
+            <input
+              type="number"
+              className="form-control"
+              id="points"
+              placeholder="0"
+            />
+          </div>
+        </div>
 
-        <tr>
-          <td align="right" valign="top">
-            <label htmlFor="wd-submission-link">Submission Link</label>
-          </td>
-          <td>
-            <input type="url" id="wd-submission-link" placeholder="https://example.com" />
-          </td>
-        </tr>
-
-        <tr>
-          <td align="right" valign="top">
-            <label htmlFor="wd-assignment-type">Assignment Type</label>
-          </td>
-          <td>
-            <select id="wd-assignment-type">
-              <option value="essay">Essay</option>
-              <option value="project">Project</option>
-              <option value="quiz">Quiz</option>
-              <option value="presentation">Presentation</option>
+        <div className="row m-2">
+          <div className="col-4">
+            <label htmlFor="wd-assignment-group" className="form-label">
+              Assignment Group
+            </label>
+          </div>
+          <div className="col-8">
+            <select
+              className="form-select"
+              id="assignment-group"
+              value="Assignments"
+            >
+              <option>Assignments</option>
+              <option>Projects</option>
+              <option>Quizzes</option>
             </select>
-          </td>
-        </tr>
+          </div>
+        </div>
 
-        <tr>
-          <td align="right" valign="top">
-            <label htmlFor="wd-file-upload">Upload Assignment File</label>
-          </td>
-          <td>
-            <input type="file" id="wd-file-upload" />
-          </td>
-        </tr>
+        <div className="row m-2">
+          <div className="col-4">
+            <label htmlFor="wd-grade-dropdown" className="form-label">
+              Show Grades as
+            </label>
+          </div>
+          <div className="col-8">
+            <select
+              className="form-select"
+              id="grades-dropdown"
+              value="Percentage"
+            >
+              <option>Percentage</option>
+              <option>100 Scale</option>
+              <option>10 Scale</option>
+              <option>Letter Grade</option>
+              <option>Raw Score</option>
+            </select>
+          </div>
+        </div>
 
-        <tr>
-          <td align="right" valign="top">
-            <label>Graded</label>
-          </td>
-          <td>
-            <input type="checkbox" id="wd-graded" />
-            <label htmlFor="wd-graded">This assignment is graded</label>
-          </td>
-        </tr>
+        <div className="row m-2">
+          <div className="col-4">
+            <label htmlFor="wd-submission-type" className="form-label">
+              Submission Type
+            </label>
+          </div>
+          <div className="col-8">
+            <div className="card border-grey p-2">
+              <select
+                className="form-select"
+                id="submission-dropdown"
+                value="Online"
+              >
+                <option>Online</option>
+                <option>Offline</option>
+              </select>
+              <br />
+              <div className="form-check">
+                <input
+                  type="checkbox"
+                  className="form-check-input"
+                  id="submission-type"
+                />
+                <label htmlFor="submission-type">Text Entry</label>
+              </div>
+              <div className="form-check">
+                <input
+                  type="checkbox"
+                  className="form-check-input"
+                  id="submission-type"
+                />
+                <label htmlFor="submission-type">Website URL</label>
+              </div>
+              <div className="form-check">
+                <input
+                  type="checkbox"
+                  className="form-check-input"
+                  id="submission-type"
+                />
+                <label htmlFor="submission-type">Media Recordings</label>
+              </div>
+            </div>
+          </div>
+        </div>
 
-        <tr>
-          <td align="right" valign="top">
-            <label>Peer Review</label>
-          </td>
-          <td>
-            <input type="radio" id="wd-peer-review-yes" name="peer-review" value="yes" />
-            <label htmlFor="wd-peer-review-yes">Yes</label>
-            <input type="radio" id="wd-peer-review-no" name="peer-review" value="no" />
-            <label htmlFor="wd-peer-review-no">No</label>
-          </td>
-        </tr>
+        <div className="row m-2">
+          <div className="col-4">
+            <label htmlFor="wd-assign-to" className="form-label">
+              Assign
+            </label>
+          </div>
+          <div className="col-8">
+            <div className="row m-1">
+              <label htmlFor="wd-due-date" className="form-label">
+                Due Date
+              </label>
+              <input
+                type="datetime-local"
+                className="form-control"
+                id="due-date"
+              />
+            </div>
+            <div className="row">
+              {/* Available From */}
+              <div className="col-md-6 mb-3">
+                <label htmlFor="wd-available-from" className="form-label">
+                  Available From
+                </label>
+                <input
+                  type="datetime-local"
+                  className="form-control"
+                  id="available-from"
+                />
+              </div>
 
-      </table>
+              {/* Available Until */}
+              <div className="col-md-6 mb-3">
+                <label htmlFor="wd-available-to" className="form-label">
+                  Until
+                </label>
+                <input
+                  type="datetime-local"
+                  className="form-control"
+                  id="available-to"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
