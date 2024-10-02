@@ -3,6 +3,7 @@ import { FaCalendarAlt, FaSearch } from "react-icons/fa";
 import LessonControlButtons from "../Modules/LessonControlsButton";
 import { IoAdd, IoEllipsisVertical } from "react-icons/io5";
 import { IoMdBookmarks } from "react-icons/io";
+import { MdEditDocument } from "react-icons/md";
 
 export default function Assignments() {
   return (
@@ -64,15 +65,19 @@ export default function Assignments() {
               <li className="wd-lesson list-group-item p-3 ps-1">
                 <div className="d-flex align-items-center">
                   <BsGripVertical className="me-2 fs-3" />
-                  <IoMdBookmarks className="me-2 fs-3" />
+                  <MdEditDocument className="me-2 fs-3" />
                   <div className="flex-grow-1">
                     <div className="fw-bold text-dark">A1</div>
-                    <div className="small text-muted">
-                      Description: Create a simple web page using HTML and CSS.
+                    <div className="medium text-danger">
+                      Multiple Modules{" "}
+                      <span className="text-muted">
+                        | <strong>Not Available Until </strong> May 6th at 12:00
+                        |
+                      </span>
                     </div>
-                    <div className="small text-danger mt-1">
-                      <FaCalendarAlt className="me-1" />
-                      Due Date: March 15, 2025
+                    <div className="small text-muted mt-1"></div>
+                    <div className="small text-muted mt-1">
+                      <strong>Due Date: </strong>May 30th, 2025 | 11:59 PM
                     </div>
                   </div>{" "}
                   <LessonControlButtons />
@@ -87,15 +92,18 @@ export default function Assignments() {
               <li className="wd-lesson list-group-item p-3 ps-1">
                 <div className="d-flex align-items-center">
                   <BsGripVertical className="me-2 fs-3" />
-                  <IoMdBookmarks className="me-2 fs-3" />
+                  <MdEditDocument className="me-2 fs-3" />
                   <div className="flex-grow-1">
                     <div className="fw-bold text-dark">A2</div>
-                    <div className="small text-muted">
-                      Description: Create a simple web page using HTML and CSS.
+                    <div className="medium text-danger">
+                      Multiple Modules{" "}
+                      <span className="text-muted">
+                        | <strong>Not Available Until </strong> May 6 at 12:00 |
+                      </span>
                     </div>
-                    <div className="small text-danger mt-1">
-                      <FaCalendarAlt className="me-1" />
-                      Due Date: March 22, 2025
+                    <div className="small text-muted mt-1"></div>
+                    <div className="small text-muted mt-1">
+                      <strong>Due Date: </strong>May 30th, 2025 | 11:59 PM
                     </div>
                   </div>{" "}
                   <LessonControlButtons />
@@ -110,15 +118,18 @@ export default function Assignments() {
               <li className="wd-lesson list-group-item p-3 ps-1">
                 <div className="d-flex align-items-center">
                   <BsGripVertical className="me-2 fs-3" />
-                  <IoMdBookmarks className="me-2 fs-3" />
+                  <MdEditDocument className="me-2 fs-3" />
                   <div className="flex-grow-1">
                     <div className="fw-bold text-dark">A3</div>
-                    <div className="small text-muted">
-                      Description: Create a simple web page using HTML and CSS.
+                    <div className="medium text-danger">
+                      Multiple Modules{" "}
+                      <span className="text-muted">
+                        | <strong>Not Available Until </strong> May 6 at 12:00 |
+                      </span>
                     </div>
-                    <div className="small text-danger mt-1">
-                      <FaCalendarAlt className="me-1" />
-                      Due Date: March 26, 2025
+                    <div className="small text-muted mt-1"></div>
+                    <div className="small text-muted mt-1">
+                      <strong>Due Date: </strong>May 30th, 2025 | 11:59 PM
                     </div>
                   </div>{" "}
                   <LessonControlButtons />
@@ -133,15 +144,18 @@ export default function Assignments() {
               <li className="wd-lesson list-group-item p-3 ps-1">
                 <div className="d-flex align-items-center">
                   <BsGripVertical className="me-2 fs-3" />
-                  <IoMdBookmarks className="me-2 fs-3" />
+                  <MdEditDocument className="me-2 fs-3" />
                   <div className="flex-grow-1">
                     <div className="fw-bold text-dark">A4</div>
-                    <div className="small text-muted">
-                      Description: Create a simple web page using HTML and CSS.
+                    <div className="medium text-danger">
+                      Multiple Modules{" "}
+                      <span className="text-muted">
+                        | <strong>Not Available Until </strong> May 6 at 12:00 |
+                      </span>
                     </div>
-                    <div className="small text-danger mt-1">
-                      <FaCalendarAlt className="me-1" />
-                      Due Date: March 30, 2025
+                    <div className="small text-muted mt-1"></div>
+                    <div className="small text-muted mt-1">
+                      <strong>Due Date: </strong>May 30th, 2025 | 11:59 PM
                     </div>
                   </div>{" "}
                   <LessonControlButtons />

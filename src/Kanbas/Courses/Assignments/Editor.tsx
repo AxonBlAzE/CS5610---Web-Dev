@@ -24,7 +24,19 @@ export default function AssignmentEditor() {
           <textarea
             className="form-control"
             id="description"
-            rows={2}
+            rows={6}
+            // value="The assignment is available online
+
+            //               Submit a link to the landing page of your Web application running on Netlify.
+
+            //               The landing page should include the following:
+
+            //               -Your full name and section
+            //               -Links to each of the lab assignments
+            //               -Link to the Kanbas application
+            //               -Links to all relevant source code repositories
+
+            //               The Kanbas application should include a link to  navigate back to the landing page."
           ></textarea>
         </div>
 
@@ -131,14 +143,27 @@ export default function AssignmentEditor() {
 
         <div className="row m-2">
           <div className="col-4">
-            <label htmlFor="wd-assign-to" className="form-label">
+            <label htmlFor="wd-assign" className="form-label">
               Assign
             </label>
           </div>
           <div className="col-8">
             <div className="row m-1">
+              <label htmlFor="wd-assign-to" className="form-label">
+                <strong>Assign to</strong>
+              </label>
+              <select
+                id="multi-select"
+                className="form-select"
+                aria-label="Dropdown"
+              >
+                <option value="option1">Everyone1</option>
+                <option value="option2">Selected</option>
+              </select>
+            </div>
+            <div className="row m-1">
               <label htmlFor="wd-due-date" className="form-label">
-                Due Date
+                <strong>Due Date</strong>
               </label>
               <input
                 type="datetime-local"
@@ -150,7 +175,7 @@ export default function AssignmentEditor() {
               {/* Available From */}
               <div className="col-md-6 mb-3">
                 <label htmlFor="wd-available-from" className="form-label">
-                  Available From
+                  <strong>Available From</strong>
                 </label>
                 <input
                   type="datetime-local"
@@ -162,7 +187,7 @@ export default function AssignmentEditor() {
               {/* Available Until */}
               <div className="col-md-6 mb-3">
                 <label htmlFor="wd-available-to" className="form-label">
-                  Until
+                  <strong>Until</strong>
                 </label>
                 <input
                   type="datetime-local"
