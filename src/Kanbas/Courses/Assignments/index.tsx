@@ -9,27 +9,27 @@ export default function Assignments() {
   return (
     <div id="wd-assignments">
       <div className="d-flex align-items-center justify-content-between">
-        <div className="flex-grow-1 me-3" style={{ maxWidth: "400px" }}>
+        <div className="d-flex justify-content-center">
           <form className="form-inline">
-            <div className="input-group w-100">
-              <div className="input-group-prepend">
-                <span className="input-group-text" id="basic-addon1">
-                  <FaSearch
-                    style={{ fontSize: "1.6rem", verticalAlign: "middle" }}
-                  />
-                </span>
-              </div>
+            <div className="input-group">
+              <span className="input-group-text bg-white border-end-0">
+                <FaSearch className="fs-5" />
+              </span>
               <input
-                id="wd-search-assignment"
-                className="form-control"
+                type="text"
+                className="form-control border-start-0"
                 placeholder="Search for Assignments"
+                aria-label="Search"
               />
             </div>
           </form>
         </div>
 
         <div>
-          <button id="wd-add-assignment-group" className="btn btn-light me-2">
+          <button
+            id="wd-add-assignment-group"
+            className="btn btn-secondary me-2"
+          >
             + Group
           </button>
           <button id="wd-add-assignment" className="btn btn-danger">
@@ -65,7 +65,7 @@ export default function Assignments() {
               <li className="wd-lesson list-group-item p-3 ps-1">
                 <div className="d-flex align-items-center">
                   <BsGripVertical className="me-2 fs-3" />
-                  <MdEditDocument className="me-2 fs-3" />
+                  <MdEditDocument className="me-2 fs-3 text-success" />
                   <div className="flex-grow-1">
                     <div className="fw-bold text-dark">A1</div>
                     <div className="medium text-danger">
@@ -92,7 +92,7 @@ export default function Assignments() {
               <li className="wd-lesson list-group-item p-3 ps-1">
                 <div className="d-flex align-items-center">
                   <BsGripVertical className="me-2 fs-3" />
-                  <MdEditDocument className="me-2 fs-3" />
+                  <MdEditDocument className="me-2 fs-3 text-success" />
                   <div className="flex-grow-1">
                     <div className="fw-bold text-dark">A2</div>
                     <div className="medium text-danger">
@@ -118,7 +118,7 @@ export default function Assignments() {
               <li className="wd-lesson list-group-item p-3 ps-1">
                 <div className="d-flex align-items-center">
                   <BsGripVertical className="me-2 fs-3" />
-                  <MdEditDocument className="me-2 fs-3" />
+                  <MdEditDocument className="me-2 fs-3 text-success" />
                   <div className="flex-grow-1">
                     <div className="fw-bold text-dark">A3</div>
                     <div className="medium text-danger">
@@ -144,7 +144,7 @@ export default function Assignments() {
               <li className="wd-lesson list-group-item p-3 ps-1">
                 <div className="d-flex align-items-center">
                   <BsGripVertical className="me-2 fs-3" />
-                  <MdEditDocument className="me-2 fs-3" />
+                  <MdEditDocument className="me-2 fs-3 text-success" />
                   <div className="flex-grow-1">
                     <div className="fw-bold text-dark">A4</div>
                     <div className="medium text-danger">

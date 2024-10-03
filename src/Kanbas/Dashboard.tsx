@@ -42,6 +42,18 @@ const courses: Course[] = [
     image:
       "https://lh5.googleusercontent.com/proxy/OHJkO9--W5k32NfojBIktnJbQ0H0izVH9dVTK04DmVc6PQWragjBwlPXNzJudzXn417DWeTVqnQ3_xjv",
   },
+  {
+    id: 7,
+    title: "Three.js",
+    image:
+      "https://miro.medium.com/v2/resize:fit:687/1*m0zrCLd2wY29-jiHaxYsgA.png",
+  },
+  {
+    id: 8,
+    title: "Supabase",
+    image:
+      "https://cdn.prod.website-files.com/66842e04d18971242a294872/669e87d174d190a8ba60b861_supabase-TAiY.png",
+  },
 ];
 
 interface CourseCardProps {
@@ -68,7 +80,16 @@ const CourseCard: React.FC<CourseCardProps> = ({ course }) => (
         <div className="card-body d-flex flex-column">
           <h5 className="card-title">{course.title}</h5>
           <p className="card-text flex-grow-1">Full Stack software developer</p>
-          <button className="btn btn-primary mt-auto">Go</button>
+          <button
+            className="btn btn-primary mt-auto"
+            style={{
+              width: "auto",
+              alignSelf: "flex-start",
+              padding: "0.5rem 1rem",
+            }}
+          >
+            Go
+          </button>
         </div>
       </Link>
     </div>

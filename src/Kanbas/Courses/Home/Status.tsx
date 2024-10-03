@@ -6,10 +6,18 @@ import { IoNotificationsCircle } from "react-icons/io5";
 import { IoSettings } from "react-icons/io5";
 import { MdDeleteForever } from "react-icons/md";
 import { CiViewTimeline } from "react-icons/ci";
+import { SiSimpleanalytics } from "react-icons/si";
+import { IoMdHome } from "react-icons/io";
+import { TfiAnnouncement } from "react-icons/tfi";
 
 export default function CourseStatus() {
   return (
-    <div id="wd-course-status" style={{ width: "300px" }}>
+    <div
+      id="wd-course-status"
+      style={{
+        width: "300px",
+      }}
+    >
       <h2>Course Status</h2>
       {/* <button>Unpublish</button>
       <button>Publish</button>
@@ -39,25 +47,40 @@ export default function CourseStatus() {
         <LiaFileImportSolid className="me-2 fs-5" /> Import from Commons{" "}
       </button>
 
+      {/* home page */}
+      <button className="btn btn-lg btn-secondary w-100 mt-1 text-start">
+        <IoMdHome className="me-2 fs-5" /> Choose Home Page{" "}
+      </button>
+
+      {/* course screen */}
+      <button className="btn btn-lg btn-secondary w-100 mt-1 text-start">
+        <IoSettings className="me-2 fs-5" /> View Course Screen{" "}
+      </button>
+
+      {/* delete course
+      <button className="btn btn-lg btn-danger w-100 mt-1 text-start">
+        <MdDeleteForever className="me-2 fs-5" /> Delete Course{" "}
+      </button> */}
+
+      {/* view enrollment
+      <button className="btn btn-lg btn-secondary w-100 mt-1 text-start">
+        <CiViewTimeline className="me-2 fs-5" /> View Enrollment{" "}
+      </button> */}
+
+      {/* New Course */}
+      <button className="btn btn-lg btn-secondary w-100 mt-1 text-start">
+        <TfiAnnouncement className="me-2 fs-5" /> New Annoucement{" "}
+      </button>
+
+      {/* New Analytics */}
+      <button className="btn btn-lg btn-secondary w-100 mt-1 text-start">
+        <SiSimpleanalytics className="me-2 fs-5" /> New Analytics{" "}
+      </button>
+
       {/* course notifications */}
       <button className="btn btn-lg btn-secondary w-100 mt-1 text-start">
         <IoNotificationsCircle className="me-2 fs-5" /> View Course
         Notifications{" "}
-      </button>
-
-      {/* course settings */}
-      <button className="btn btn-lg btn-secondary w-100 mt-1 text-start">
-        <IoSettings className="me-2 fs-5" /> View Course Settings{" "}
-      </button>
-
-      {/* delete course */}
-      <button className="btn btn-lg btn-danger w-100 mt-1 text-start">
-        <MdDeleteForever className="me-2 fs-5" /> Delete Course{" "}
-      </button>
-
-      {/* view enrollment */}
-      <button className="btn btn-lg btn-secondary w-100 mt-1 text-start">
-        <CiViewTimeline className="me-2 fs-5" /> View Enrollment{" "}
       </button>
     </div>
   );

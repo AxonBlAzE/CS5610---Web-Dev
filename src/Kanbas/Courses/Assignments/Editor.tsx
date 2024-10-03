@@ -5,7 +5,7 @@ export default function AssignmentEditor() {
       className="container mt-1 overflow-auto"
       style={{ maxHeight: 700 }}
     >
-      <div className="card">
+      <div className="card border-0">
         <div className="card-body">
           <label htmlFor="wd-name">Assignment Name</label>
           <br />
@@ -13,7 +13,7 @@ export default function AssignmentEditor() {
             id="wd-name"
             type="text"
             className="form-control"
-            placeholder="A1 - ENV + HTML"
+            placeholder="A1"
           />
         </div>
 
@@ -25,23 +25,23 @@ export default function AssignmentEditor() {
             className="form-control"
             id="description"
             rows={6}
-            // value="The assignment is available online
+            defaultValue="The assignment is available online
 
-            //               Submit a link to the landing page of your Web application running on Netlify.
+                          Submit a link to the landing page of your Web application running on Netlify.
 
-            //               The landing page should include the following:
+                          The landing page should include the following:
 
-            //               -Your full name and section
-            //               -Links to each of the lab assignments
-            //               -Link to the Kanbas application
-            //               -Links to all relevant source code repositories
+                          -Your full name and section
+                          -Links to each of the lab assignments
+                          -Link to the Kanbas application
+                          -Links to all relevant source code repositories
 
-            //               The Kanbas application should include a link to  navigate back to the landing page."
+                          The Kanbas application should include a link to  navigate back to the landing page."
           ></textarea>
         </div>
 
         <div className="row m-2">
-          <div className="col-4">
+          <div className="col-4 text-end">
             <label htmlFor="points" className="form-label">
               Points
             </label>
@@ -57,7 +57,7 @@ export default function AssignmentEditor() {
         </div>
 
         <div className="row m-2">
-          <div className="col-4">
+          <div className="col-4 text-end">
             <label htmlFor="wd-assignment-group" className="form-label">
               Assignment Group
             </label>
@@ -76,7 +76,7 @@ export default function AssignmentEditor() {
         </div>
 
         <div className="row m-2">
-          <div className="col-4">
+          <div className="col-4 text-end">
             <label htmlFor="wd-grade-dropdown" className="form-label">
               Show Grades as
             </label>
@@ -97,7 +97,7 @@ export default function AssignmentEditor() {
         </div>
 
         <div className="row m-2">
-          <div className="col-4">
+          <div className="col-4 text-end">
             <label htmlFor="wd-submission-type" className="form-label">
               Submission Type
             </label>
@@ -142,7 +142,7 @@ export default function AssignmentEditor() {
         </div>
 
         <div className="row m-2">
-          <div className="col-4">
+          <div className="col-4 text-end">
             <label htmlFor="wd-assign" className="form-label">
               Assign
             </label>
