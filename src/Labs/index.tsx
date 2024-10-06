@@ -9,6 +9,7 @@ import { HashRouter, Link, Route, Routes } from "react-router-dom";
 import LabsNavbar from "./labsNavbar";
 import Lab1 from "./Lab 1";
 import Lab2 from "./Lab 2";
+import Lab3 from "./Lab 3";
 
 const LabWork = () => {
   return (
@@ -39,6 +40,7 @@ const LabWork = () => {
         />
         <Route path="lab1/*" element={<Lab1 />} />
         <Route path="lab2/*" element={<Lab2 />} />
+        <Route path="lab3/*" element={<Lab3 />} />
       </Routes>
 
       {/* <Routes>
