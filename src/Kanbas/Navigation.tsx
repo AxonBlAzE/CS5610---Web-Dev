@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { AiOutlineDashboard } from "react-icons/ai";
 import { IoCalendarOutline } from "react-icons/io5";
 import { LiaBookSolid, LiaCogSolid } from "react-icons/lia";
@@ -9,6 +9,15 @@ import { CgWebsite } from "react-icons/cg";
 import { IoBackspace } from "react-icons/io5";
 
 export default function AccountNavigation() {
+  const { pathname } = useLocation();
+  const links = [
+    { label: "Dashboard", path: "/Kanbas/Dashboard", icon: AiOutlineDashboard },
+    { label: "Courses", path: "/Kanbas/Dashboard", icon: LiaBookSolid },
+    { label: "Calendar", path: "/Kanbas/Calendar", icon: IoCalendarOutline },
+    { label: "Inbox", path: "/Kanbas/Inbox", icon: FaInbox },
+    { label: "Labs", path: "/Labs", icon: LiaCogSolid },
+  ];
+
   return (
     <div
       id="wd-kanbas-navigation"
@@ -38,7 +47,27 @@ export default function AccountNavigation() {
         <br />
         Account
       </Link>
-      <Link
+
+      {/* New Navbar */}
+      {links.map((link) => (
+        <Link
+          key={link.path}
+          to={link.path}
+          className={`list-group-item bg-black text-center border-0
+              ${
+                pathname.includes(link.label)
+                  ? "text-danger bg-white"
+                  : "text-white bg-black"
+              }`}
+        >
+          {link.icon({ className: "fs-1 text-danger" })}
+          <br />
+          {link.label}
+        </Link>
+      ))}
+
+      {/* Old Navbar */}
+      {/* <Link
         to="Dashboard"
         id="wd-dashboard-link"
         className="list-group-item text-center border-0
@@ -78,7 +107,7 @@ export default function AccountNavigation() {
         Inbox
       </Link>
       <Link
-        to="../labwork"
+        to="../Labs"
         id="wd-labwork-link"
         className="list-group-item text-white
                    bg-black text-center border-0"
@@ -95,7 +124,7 @@ export default function AccountNavigation() {
         <IoBackspace className="fs-1 text-danger" />
         <br />
         Landing Page
-      </Link>
+      </Link> */}
     </div>
   );
 }

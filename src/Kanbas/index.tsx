@@ -24,7 +24,7 @@ const Kanbas = () => {
                 />
                 <Route path="Accounts/*" element={<Accounts />} />
                 <Route path="Dashboard/*" element={<Dashboard />} />
-                <Route path="Courses/*" element={<Courses />} />
+                <Route path="Courses/:cid/*" element={<Courses />} />
                 <Route path="Calendar" element={<h1>Calendar</h1>} />
                 <Route path="Inbox" element={<h1>Inbox</h1>} />
               </Routes>

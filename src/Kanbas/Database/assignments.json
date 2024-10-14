@@ -1,0 +1,92 @@
+[
+  {
+    "_id": "A101",
+    "title": "Propulsion Assignment",
+    "course": "RS101",
+    "module": "Module 1",
+    "availableDate": "2024-10-20",
+    "dueDate": "2024-10-30",
+    "dueTime": "11:59 PM",
+    "link": "#/Kanbas/Courses/RS101/Assignments/Editor/A101"
+  },
+  {
+    "_id": "A102",
+    "title": "Combustion Analysis",
+    "course": "RS101",
+    "module": "Module 2",
+    "availableDate": "2024-10-22",
+    "dueDate": "2024-11-02",
+    "dueTime": "11:59 PM",
+    "link": "#/Kanbas/Courses/RS101/Assignments/Editor/A102"
+  },
+  {
+    "_id": "A103",
+    "title": "Nozzle Design Project",
+    "course": "RS101",
+    "module": "Module 3",
+    "availableDate": "2024-10-25",
+    "dueDate": "2024-11-05",
+    "dueTime": "11:59 PM",
+    "link": "#/Kanbas/Courses/RS101/Assignments/Editor/A103"
+  },
+  {
+    "_id": "A201",
+    "title": "Aerodynamics Quiz",
+    "course": "RS102",
+    "module": "Module 1",
+    "availableDate": "2024-10-27",
+    "dueDate": "2024-11-07",
+    "dueTime": "11:59 PM",
+    "link": "#/Kanbas/Courses/RS102/Assignments/Editor/A201"
+  },
+  {
+    "_id": "A202",
+    "title": "Flow Analysis",
+    "course": "RS102",
+    "module": "Module 2",
+    "availableDate": "2024-10-29",
+    "dueDate": "2024-11-10",
+    "dueTime": "11:59 PM",
+    "link": "#/Kanbas/Courses/RS102/Assignments/Editor/A202"
+  },
+  {
+    "_id": "A203",
+    "title": "Heating Analysis",
+    "course": "RS102",
+    "module": "Module 3",
+    "availableDate": "2024-10-31",
+    "dueDate": "2024-11-12",
+    "dueTime": "11:59 PM",
+    "link": "#/Kanbas/Courses/RS102/Assignments/Editor/A203"
+  },
+  {
+    "_id": "A301",
+    "title": "Structural Design Task",
+    "course": "RS103",
+    "module": "Module 1",
+    "availableDate": "2024-11-02",
+    "dueDate": "2024-11-15",
+    "dueTime": "11:59 PM",
+    "link": "#/Kanbas/Courses/RS103/Assignments/Editor/A301"
+  },
+  {
+    "_id": "A302",
+    "title": "Orbital Calculations",
+    "course": "RS103",
+    "module": "Module 2",
+    "availableDate": "2024-11-05",
+    "dueDate": "2024-11-18",
+    "dueTime": "11:59 PM",
+    "link": "#/Kanbas/Courses/RS103/Assignments/Editor/A302"
+  },
+  {
+    "_id": "A303",
+    "title": "Systems Engineering Exam",
+    "course": "RS103",
+    "module": "Module 3",
+    "availableDate": "2024-11-08",
+    "dueDate": "2024-11-20",
+    "dueTime": "11:59 PM",
+    "link": "#/Kanbas/Courses/RS103/Assignments/Editor/A303"
+  }
+]

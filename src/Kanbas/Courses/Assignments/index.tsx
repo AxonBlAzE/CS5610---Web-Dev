@@ -4,8 +4,10 @@ import LessonControlButtons from "../Modules/LessonControlsButton";
 import { IoAdd, IoEllipsisVertical } from "react-icons/io5";
 import { IoMdBookmarks } from "react-icons/io";
 import { MdEditDocument } from "react-icons/md";
+import * as db from "../../Database";
 
 export default function Assignments() {
+  const assignments = db.assignments;
   return (
     <div id="wd-assignments">
       <div className="d-flex align-items-center justify-content-between">
@@ -57,7 +59,44 @@ export default function Assignments() {
             <IoAdd className="me-2 fs-3" />
             <IoEllipsisVertical className="me-2 fs-3" />
           </div>
+
           <ul className="wd-lessons list-group rounded-0">
+            {assignments.map((assignment) => (
+              <a
+                key={assignment._id}
+                className="wd-assignment-link text-decoration-none"
+                href={assignment.link}
+              >
+                <li className="wd-lesson list-group-item p-3 ps-1">
+                  <div className="d-flex align-items-center">
+                    <BsGripVertical className="me-2 fs-3" />
+                    <MdEditDocument className="me-2 fs-3 text-success" />
+                    <div className="flex-grow-1">
+                      <div className="fw-bold text-dark">
+                        {assignment.title}
+                      </div>
+                      <div className="medium text-danger">
+                        {assignment.module}
+                        <span className="text-muted">
+                          {" "}
+                          | <strong>Not Available Until </strong>{" "}
+                          {assignment.availableDate} |
+                        </span>
+                      </div>
+                      <div className="small text-muted mt-1"></div>
+                      <div className="small text-muted mt-1">
+                        <strong>Due Date: </strong>
+                        {assignment.dueDate} | {assignment.dueTime}
+                      </div>
+                    </div>{" "}
+                    <LessonControlButtons />
+                  </div>
+                </li>
+              </a>
+            ))}
+          </ul>
+
+          {/* <ul className="wd-lessons list-group rounded-0">
             <a
               className="wd-assignment-link text-decoration-none"
               href="#/Kanbas/Courses/1234/Assignments/Editor"
@@ -162,7 +201,7 @@ export default function Assignments() {
                 </div>
               </li>
             </a>
-          </ul>
+          </ul> */}
         </li>
       </ul>
     </div>

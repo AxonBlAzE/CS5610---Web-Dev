@@ -1,9 +1,39 @@
 import { FaUserCircle } from "react-icons/fa";
+import { people } from "../../Database";
 
 export default function PeopleTable() {
+  const enrollmentData = people;
   return (
     <div id="wd-people-table">
       <table className="table table-striped">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Login ID</th>
+            <th>Section</th>
+            <th>Role</th>
+            <th>Last Activity</th>
+            <th>Total Activity</th>
+          </tr>
+        </thead>
+        <tbody>
+          {enrollmentData.map((enrollment) => (
+            <tr key={enrollment._id}>
+              <td className="wd-user text-nowrap">
+                <FaUserCircle className="me-2 fs-1 text-secondary" />
+                <span className="wd-user-id">{enrollment.user}</span>
+              </td>
+              <td className="wd-enrollment-id">{enrollment._id}</td>
+              <td className="wd-course">{enrollment.course}</td>
+              <td className="wd-role">{enrollment.role}</td>
+              <td className="wd-last-activity">{enrollment.lastActivity}</td>
+              <td className="wd-total-activity">{enrollment.totalActivity}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+
+      {/* <table className="table table-striped">
         <thead>
           <tr>
             <th>Name</th>
@@ -136,7 +166,7 @@ export default function PeopleTable() {
             <td className="wd-total-activity">07:55:29</td>
           </tr>
         </tbody>
-      </table>
+      </table> */}
     </div>
   );
 }
