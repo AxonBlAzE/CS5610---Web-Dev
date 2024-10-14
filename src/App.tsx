@@ -14,10 +14,10 @@ function App() {
         <Routes>
           {/* Default route to landing page */}
           {/* <Route path="/" element={<LandingPage />} /> */}
-          <Route path="/" element={<Navigate to="/labwork" replace={true} />} />
+          <Route path="/" element={<Navigate to="/Labs" replace={true} />} />
 
           {/* Route for LabWork */}
-          <Route path="/labwork/*" element={<LabWork />} />
+          <Route path="/Labs/*" element={<LabWork />} />
 
           {/* Route for Kanbas */}
           <Route path="/kanbas/*" element={<Kanbas />} />

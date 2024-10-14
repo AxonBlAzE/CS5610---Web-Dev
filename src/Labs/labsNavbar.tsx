@@ -8,17 +8,17 @@ const LabsNavbar = () => {
             </div> */}
       <ul className="navbar-links">
         <li>
-          <Link to="lab1">
+          <Link to="Lab1">
             <h2>Lab 1</h2>
           </Link>
         </li>
         <li>
-          <Link to="lab2">
+          <Link to="Lab2">
             <h2>Lab 2</h2>
           </Link>
         </li>
         <li>
-          <Link to="lab3">
+          <Link to="Lab3">
             <h2>Lab 3</h2>
           </Link>
         </li>

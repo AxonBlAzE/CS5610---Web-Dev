@@ -68,11 +68,11 @@ const LabWork = () => {
         <Route
           path="/"
           // element={<h3>Use the above navbar to view different components.</h3>}
-          element={<Navigate to="lab1" replace={true} />}
+          element={<Navigate to="Lab1" replace={true} />}
         />
-        <Route path="lab1/*" element={<Lab1 />} />
-        <Route path="lab2/*" element={<Lab2 />} />
-        <Route path="lab3/*" element={<Lab3 />} />
+        <Route path="Lab1/*" element={<Lab1 />} />
+        <Route path="Lab2/*" element={<Lab2 />} />
+        <Route path="Lab3/*" element={<Lab3 />} />
       </Routes>
 
       {/* <Routes>
