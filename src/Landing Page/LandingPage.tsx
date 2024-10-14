@@ -3,6 +3,7 @@ import { FaGithub } from "react-icons/fa";
 import TableRow from "./tableRows";
 import { BsArrowUpRightSquare } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import LabWork from "../Labs";
 
 const LandingPage = () => {
   return (
@@ -31,7 +32,7 @@ const LandingPage = () => {
           </button>
         </Link>
 
-        <Link to="/labwork">
+        <Link to="/labwork/*">
           <button className="button">
             Go to Lab Work <BsArrowUpRightSquare />
           </button>
@@ -43,7 +44,7 @@ const LandingPage = () => {
           </button>
         </Link>
       </div>
-      <table>
+      {/* <table>
         <thead>
           <tr>
             <th>Assignment</th>
@@ -68,7 +69,9 @@ const LandingPage = () => {
           <TableRow name="A5" description="Coming Soon..." url="" />
           <TableRow name="A6" description="Coming Soon..." url="" />
         </tbody>
-      </table>
+      </table> */}
+
+      {/* <LabWork /> */}
     </div>
   );
 };
