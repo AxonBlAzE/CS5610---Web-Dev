@@ -1,8 +1,14 @@
 import { FaUserCircle } from "react-icons/fa";
 import { people } from "../../Database";
+import { useParams } from "react-router";
 
 export default function PeopleTable() {
-  const enrollmentData = people;
+  const { cid } = useParams();
+  // const enrollmentData = people;
+  const enrollmentData = people.filter(
+    (enrollment) => enrollment.course === cid
+  );
+  console.log(enrollmentData);
   return (
     <div id="wd-people-table">
       <table className="table table-striped">

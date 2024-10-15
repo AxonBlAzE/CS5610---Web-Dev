@@ -7,7 +7,8 @@
     "availableDate": "2024-10-20",
     "dueDate": "2024-10-30",
     "dueTime": "11:59 PM",
-    "link": "#/Kanbas/Courses/RS101/Assignments/Editor/A101"
+    "link": "#/Kanbas/Courses/RS101/Assignments/A101",
+    "description": "This assignment is about propulsion systems in aerospace engineering."
   },
   {
     "_id": "A102",
@@ -17,7 +18,8 @@
     "availableDate": "2024-10-22",
     "dueDate": "2024-11-02",
     "dueTime": "11:59 PM",
-    "link": "#/Kanbas/Courses/RS101/Assignments/Editor/A102"
+    "link": "#/Kanbas/Courses/RS101/Assignments/A102",
+    "description": "This assignment is about combustion analysis in aerospace engineering."
   },
   {
     "_id": "A103",
@@ -27,7 +29,8 @@
     "availableDate": "2024-10-25",
     "dueDate": "2024-11-05",
     "dueTime": "11:59 PM",
-    "link": "#/Kanbas/Courses/RS101/Assignments/Editor/A103"
+    "link": "#/Kanbas/Courses/RS101/Assignments/A103",
+    "description": "This assignment is about nozzle design in aerospace engineering."
   },
   {
     "_id": "A201",
@@ -37,7 +40,8 @@
     "availableDate": "2024-10-27",
     "dueDate": "2024-11-07",
     "dueTime": "11:59 PM",
-    "link": "#/Kanbas/Courses/RS102/Assignments/Editor/A201"
+    "link": "#/Kanbas/Courses/RS102/Assignments/A201",
+    "description": "This quiz is about aerodynamics in aerospace engineering."
   },
   {
     "_id": "A202",
@@ -47,7 +51,8 @@
     "availableDate": "2024-10-29",
     "dueDate": "2024-11-10",
     "dueTime": "11:59 PM",
-    "link": "#/Kanbas/Courses/RS102/Assignments/Editor/A202"
+    "link": "#/Kanbas/Courses/RS102/Assignments/A202",
+    "description": "This assignment is about flow analysis in aerospace engineering."
   },
   {
     "_id": "A203",
@@ -57,7 +62,8 @@
     "availableDate": "2024-10-31",
     "dueDate": "2024-11-12",
     "dueTime": "11:59 PM",
-    "link": "#/Kanbas/Courses/RS102/Assignments/Editor/A203"
+    "link": "#/Kanbas/Courses/RS102/Assignments/A203",
+    "description": "This assignment is about heating analysis in aerospace engineering."
   },
   {
     "_id": "A301",
@@ -67,7 +73,8 @@
     "availableDate": "2024-11-02",
     "dueDate": "2024-11-15",
     "dueTime": "11:59 PM",
-    "link": "#/Kanbas/Courses/RS103/Assignments/Editor/A301"
+    "link": "#/Kanbas/Courses/RS103/Assignments/A301",
+    "description": "This task is about structural design in aerospace engineering."
   },
   {
     "_id": "A302",
@@ -77,7 +84,8 @@
     "availableDate": "2024-11-05",
     "dueDate": "2024-11-18",
     "dueTime": "11:59 PM",
-    "link": "#/Kanbas/Courses/RS103/Assignments/Editor/A302"
+    "link": "#/Kanbas/Courses/RS103/Assignments/A302",
+    "description": "This assignment is about orbital calculations in aerospace engineering."
   },
   {
     "_id": "A303",
@@ -87,6 +95,7 @@
     "availableDate": "2024-11-08",
     "dueDate": "2024-11-20",
     "dueTime": "11:59 PM",
-    "link": "#/Kanbas/Courses/RS103/Assignments/Editor/A303"
+    "link": "#/Kanbas/Courses/RS103/Assignments/A303",
+    "description": "This exam is about systems engineering in aerospace engineering."
   }
 ]

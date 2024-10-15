@@ -30,19 +30,7 @@ export default function Courses() {
         <div className="col-md-3 d-none d-md-block" style={{ width: "200px" }}>
           <CoursesNavigation />
         </div>
-        {/* <div className="d-none d-md-block w-100 vh-100"> */}
         <div className="col-12 col-md-9">
-          {/* <Routes>
-            <Route path="/" element={<Navigate to="./:cid/Home" />} />
-            <Route path="/:cid/Home" element={<Home />} />
-            <Route path="/:cid/Modules" element={<Modules />} />
-            <Route path="/:cid/Assignments" element={<Assignments />} />
-            <Route
-              path="/:cid/Assignments/:aid"
-              element={<AssignmentEditor />}
-            />
-            <Route path="/:cid/People" element={<PeopleTable />} />
-          </Routes> */}
           <Routes>
             <Route path="/" element={<Navigate to="/Home" />} />
             <Route path="/Home" element={<Home />} />

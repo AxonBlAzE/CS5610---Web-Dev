@@ -5,8 +5,10 @@ import { IoAdd, IoEllipsisVertical } from "react-icons/io5";
 import { IoMdBookmarks } from "react-icons/io";
 import { MdEditDocument } from "react-icons/md";
 import * as db from "../../Database";
+import { Link, useParams } from "react-router-dom";
 
 export default function Assignments() {
+  const { cid } = useParams();
   const assignments = db.assignments;
   return (
     <div id="wd-assignments">
@@ -62,10 +64,10 @@ export default function Assignments() {
 
           <ul className="wd-lessons list-group rounded-0">
             {assignments.map((assignment) => (
-              <a
+              <Link
                 key={assignment._id}
                 className="wd-assignment-link text-decoration-none"
-                href={assignment.link}
+                to={`/Kanbas/Courses/${cid}/Assignments/${assignment._id}`}
               >
                 <li className="wd-lesson list-group-item p-3 ps-1">
                   <div className="d-flex align-items-center">
@@ -92,116 +94,10 @@ export default function Assignments() {
                     <LessonControlButtons />
                   </div>
                 </li>
-              </a>
+                {/* </a> */}
+              </Link>
             ))}
           </ul>
-
-          {/* <ul className="wd-lessons list-group rounded-0">
-            <a
-              className="wd-assignment-link text-decoration-none"
-              href="#/Kanbas/Courses/1234/Assignments/Editor"
-            >
-              <li className="wd-lesson list-group-item p-3 ps-1">
-                <div className="d-flex align-items-center">
-                  <BsGripVertical className="me-2 fs-3" />
-                  <MdEditDocument className="me-2 fs-3 text-success" />
-                  <div className="flex-grow-1">
-                    <div className="fw-bold text-dark">A1</div>
-                    <div className="medium text-danger">
-                      Multiple Modules{" "}
-                      <span className="text-muted">
-                        | <strong>Not Available Until </strong> May 6th at 12:00
-                        |
-                      </span>
-                    </div>
-                    <div className="small text-muted mt-1"></div>
-                    <div className="small text-muted mt-1">
-                      <strong>Due Date: </strong>May 30th, 2025 | 11:59 PM
-                    </div>
-                  </div>{" "}
-                  <LessonControlButtons />
-                </div>
-              </li>
-            </a>
-
-            <a
-              className="wd-assignment-link text-decoration-none"
-              href="#/Kanbas/Courses/1234/Assignments/Editor"
-            >
-              <li className="wd-lesson list-group-item p-3 ps-1">
-                <div className="d-flex align-items-center">
-                  <BsGripVertical className="me-2 fs-3" />
-                  <MdEditDocument className="me-2 fs-3 text-success" />
-                  <div className="flex-grow-1">
-                    <div className="fw-bold text-dark">A2</div>
-                    <div className="medium text-danger">
-                      Multiple Modules{" "}
-                      <span className="text-muted">
-                        | <strong>Not Available Until </strong> May 6 at 12:00 |
-                      </span>
-                    </div>
-                    <div className="small text-muted mt-1"></div>
-                    <div className="small text-muted mt-1">
-                      <strong>Due Date: </strong>May 30th, 2025 | 11:59 PM
-                    </div>
-                  </div>{" "}
-                  <LessonControlButtons />
-                </div>
-              </li>
-            </a>
-
-            <a
-              className="wd-assignment-link text-decoration-none"
-              href="#/Kanbas/Courses/1234/Assignments/Editor"
-            >
-              <li className="wd-lesson list-group-item p-3 ps-1">
-                <div className="d-flex align-items-center">
-                  <BsGripVertical className="me-2 fs-3" />
-                  <MdEditDocument className="me-2 fs-3 text-success" />
-                  <div className="flex-grow-1">
-                    <div className="fw-bold text-dark">A3</div>
-                    <div className="medium text-danger">
-                      Multiple Modules{" "}
-                      <span className="text-muted">
-                        | <strong>Not Available Until </strong> May 6 at 12:00 |
-                      </span>
-                    </div>
-                    <div className="small text-muted mt-1"></div>
-                    <div className="small text-muted mt-1">
-                      <strong>Due Date: </strong>May 30th, 2025 | 11:59 PM
-                    </div>
-                  </div>{" "}
-                  <LessonControlButtons />
-                </div>
-              </li>
-            </a>
-
-            <a
-              className="wd-assignment-link text-decoration-none"
-              href="#/Kanbas/Courses/1234/Assignments/Editor"
-            >
-              <li className="wd-lesson list-group-item p-3 ps-1">
-                <div className="d-flex align-items-center">
-                  <BsGripVertical className="me-2 fs-3" />
-                  <MdEditDocument className="me-2 fs-3 text-success" />
-                  <div className="flex-grow-1">
-                    <div className="fw-bold text-dark">A4</div>
-                    <div className="medium text-danger">
-                      Multiple Modules{" "}
-                      <span className="text-muted">
-                        | <strong>Not Available Until </strong> May 6 at 12:00 |
-                      </span>
-                    </div>
-                    <div className="small text-muted mt-1"></div>
-                    <div className="small text-muted mt-1">
-                      <strong>Due Date: </strong>May 30th, 2025 | 11:59 PM
-                    </div>
-                  </div>{" "}
-                  <LessonControlButtons />
-                </div>
-              </li>
-            </a>
-          </ul> */}
         </li>
       </ul>
     </div>

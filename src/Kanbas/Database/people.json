@@ -2,7 +2,7 @@
   {
     "user": "Tony Stark",
     "_id": "001234561S",
-    "course": "S101",
+    "course": "RS101",
     "role": "STUDENT",
     "lastActivity": "2020-10-01",
     "totalActivity": "10:21:32"
@@ -10,7 +10,7 @@
   {
     "user": "Bruce Wayne",
     "_id": "001234562S",
-    "course": "S102",
+    "course": "RS102",
     "role": "STUDENT",
     "lastActivity": "2020-10-02",
     "totalActivity": "12:15:42"
@@ -18,7 +18,7 @@
   {
     "user": "Steve Rogers",
     "_id": "001234563S",
-    "course": "S103",
+    "course": "RS103",
     "role": "STUDENT",
     "lastActivity": "2020-10-03",
     "totalActivity": "08:12:50"
@@ -26,7 +26,7 @@
   {
     "user": "Natasha Romanoff",
     "_id": "001234564S",
-    "course": "S104",
+    "course": "RS104",
     "role": "STUDENT",
     "lastActivity": "2020-10-04",
     "totalActivity": "14:05:21"
@@ -34,7 +34,7 @@
   {
     "user": "Peter Parker",
     "_id": "001234565S",
-    "course": "S105",
+    "course": "RS101",
     "role": "STUDENT",
     "lastActivity": "2020-10-05",
     "totalActivity": "09:33:17"
