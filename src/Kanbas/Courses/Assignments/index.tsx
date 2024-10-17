@@ -9,7 +9,9 @@ import { Link, useParams } from "react-router-dom";
 
 export default function Assignments() {
   const { cid } = useParams();
-  const assignments = db.assignments;
+  const assignments = db.assignments.filter(
+    (assignment) => assignment.course === cid
+  );
   return (
     <div id="wd-assignments">
       <div className="d-flex align-items-center justify-content-between">

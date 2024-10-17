@@ -6,7 +6,7 @@ export default function Dashboard() {
   const courses = db.courses;
   return (
     <div id="wd-dashboard">
-      <h1 id="wd-dashboard-title">Dashboard</h1> <hr />
+      <h1 id="wd-dashboard-title">Dashboard</h1>
       <h2 id="wd-dashboard-published">
         Published Courses ({courses.length})
       </h2>{" "}
@@ -21,7 +21,7 @@ export default function Dashboard() {
                   className="wd-dashboard-course-link text-decoration-none text-dark"
                 >
                   <img
-                    // src="https://miro.medium.com/v2/1*K0a7xINk0RM5gfXGSN68cw.png"
+                    src="https://miro.medium.com/v2/1*K0a7xINk0RM5gfXGSN68cw.png"
                     width="100%"
                     height={160}
                   />

@@ -170,7 +170,7 @@ export default function AssignmentEditor() {
                 className="form-select"
                 aria-label="Dropdown"
               >
-                <option value="option1">Everyone1</option>
+                <option value="option1">Everyone</option>
                 <option value="option2">Selected</option>
               </select>
             </div>
