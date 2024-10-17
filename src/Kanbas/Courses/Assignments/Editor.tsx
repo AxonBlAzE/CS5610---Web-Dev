@@ -1,15 +1,23 @@
 import { useParams } from "react-router";
 import * as db from "../../Database";
+import { useState } from "react";
+
 export default function AssignmentEditor() {
-  const id = useParams();
-  console.log("Here", id);
-  console;
-  console.log("aid", id.cid); // actually mentions aid
-  console.log("title", id.title);
-  const assignments = db.assignments.find(
-    (assignment) => assignment._id === id.aid
+  const { aid, cid } = useParams();
+  const assignment = db.assignments.find(
+    (assignment) => assignment._id === aid
   );
-  console.log(assignments);
+
+  const [title, setTitle] = useState(assignment?.title || "");
+  const [description, setDescription] = useState(assignment?.description || "");
+  const [points, setPoints] = useState(assignment?.points || 0);
+  const [dueDate, setDueDate] = useState(
+    assignment?.dueDate || new Date().toISOString().slice(0, 16)
+  );
+  const [availableDate, setAvailableDate] = useState(
+    assignment?.availableDate || new Date().toISOString().slice(0, 16)
+  );
+
   return (
     <div
       id="wd-assignments-editor"
@@ -24,7 +32,9 @@ export default function AssignmentEditor() {
             id="wd-name"
             type="text"
             className="form-control"
-            placeholder={assignments!.title}
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
+            placeholder={assignment!.title}
           />
         </div>
 
@@ -36,8 +46,9 @@ export default function AssignmentEditor() {
             className="form-control"
             id="description"
             rows={6}
-            defaultValue={assignments!.description}
-          ></textarea>
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
+          />
         </div>
 
         <div className="row m-2">
@@ -51,6 +62,8 @@ export default function AssignmentEditor() {
               type="number"
               className="form-control"
               id="points"
+              value={points}
+              // onChange={(e) => setPoints(e.target.value)}
               placeholder="0"
             />
           </div>
@@ -66,7 +79,7 @@ export default function AssignmentEditor() {
             <select
               className="form-select"
               id="assignment-group"
-              value="Assignments"
+              defaultValue="Assignments"
             >
               <option>Assignments</option>
               <option>Projects</option>
@@ -85,7 +98,7 @@ export default function AssignmentEditor() {
             <select
               className="form-select"
               id="grades-dropdown"
-              value="Percentage"
+              defaultValue="Percentage"
             >
               <option>Percentage</option>
               <option>100 Scale</option>
@@ -107,7 +120,7 @@ export default function AssignmentEditor() {
               <select
                 className="form-select"
                 id="submission-dropdown"
-                value="Online"
+                defaultValue="Online"
               >
                 <option>Online</option>
                 <option>Offline</option>
@@ -117,25 +130,25 @@ export default function AssignmentEditor() {
                 <input
                   type="checkbox"
                   className="form-check-input"
-                  id="submission-type"
+                  id="submission-type-text-entry"
                 />
-                <label htmlFor="submission-type">Text Entry</label>
+                <label htmlFor="submission-type-text-entry">Text Entry</label>
               </div>
               <div className="form-check">
                 <input
                   type="checkbox"
                   className="form-check-input"
-                  id="submission-type"
+                  id="submission-type-url"
                 />
-                <label htmlFor="submission-type">Website URL</label>
+                <label htmlFor="submission-type-url">Website URL</label>
               </div>
               <div className="form-check">
                 <input
                   type="checkbox"
                   className="form-check-input"
-                  id="submission-type"
+                  id="submission-type-media"
                 />
-                <label htmlFor="submission-type">Media Recordings</label>
+                <label htmlFor="submission-type-media">Media Recordings</label>
               </div>
             </div>
           </div>
@@ -169,7 +182,8 @@ export default function AssignmentEditor() {
                 type="datetime-local"
                 className="form-control"
                 id="due-date"
-                value={assignments!.dueDate}
+                value={dueDate}
+                onChange={(e) => setDueDate(e.target.value)}
               />
             </div>
             <div className="row">
@@ -182,6 +196,8 @@ export default function AssignmentEditor() {
                   type="datetime-local"
                   className="form-control"
                   id="available-from"
+                  value={availableDate}
+                  onChange={(e) => setAvailableDate(e.target.value)}
                 />
               </div>
 
@@ -201,7 +217,7 @@ export default function AssignmentEditor() {
         </div>
       </div>
 
-      {/* 2 buttons one for submit other cancel */}
+      {/* 2 buttons: one for submit, one for cancel */}
       <div
         className="buttons-container"
         style={{

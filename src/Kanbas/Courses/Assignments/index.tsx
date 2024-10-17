@@ -88,7 +88,7 @@ export default function Assignments() {
                       <div className="small text-muted mt-1"></div>
                       <div className="small text-muted mt-1">
                         <strong>Due Date: </strong>
-                        {assignment.dueDate} | {assignment.dueTime}
+                        {assignment.dueDate}
                       </div>
                     </div>{" "}
                     <LessonControlButtons />
