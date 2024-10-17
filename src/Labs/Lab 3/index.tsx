@@ -30,6 +30,8 @@ import Highlight from "./Highlight";
 import TOC from "./TOC";
 import AddPathParameters from "./AddPathParameters";
 import PathParameters from "./PathParameters";
+import ImpliedReturn from "./ImpliedReturn";
+import FilterFunction from "./FilterFunction";
 
 export default function Lab3() {
   console.log("Hello World!");
@@ -51,6 +53,7 @@ export default function Lab3() {
       <hr />
       <LegacyFunctions />
       <ArrowFunctions />
+      <ImpliedReturn />
       <TemplateLiterals />
       <hr />
 
@@ -62,10 +65,13 @@ export default function Lab3() {
       <ForLoops />
       <MapFunction />
       <FindFunction />
+      <FilterFunction />
       <FindIndex />
       <JsonStringify />
       <House />
+      <h3>Todo Item</h3>
       <TodoItem />
+      <hr />
       <TodoList />
       <Spreading />
       <Destructing />
