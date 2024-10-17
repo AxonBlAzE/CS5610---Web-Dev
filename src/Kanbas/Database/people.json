@@ -78,5 +78,85 @@
     "role": "STUDENT",
     "lastActivity": "2020-10-10",
     "totalActivity": "07:55:29"
+  },
+  {
+    "user": "Scott Lang",
+    "_id": "001234571S",
+    "course": "RS101",
+    "role": "STUDENT",
+    "lastActivity": "2020-10-11",
+    "totalActivity": "09:15:30"
+  },
+  {
+    "user": "T'Challa",
+    "_id": "001234572S",
+    "course": "RS102",
+    "role": "STUDENT",
+    "lastActivity": "2020-10-12",
+    "totalActivity": "08:45:12"
+  },
+  {
+    "user": "Carol Danvers",
+    "_id": "001234573S",
+    "course": "RS101",
+    "role": "STUDENT",
+    "lastActivity": "2020-10-13",
+    "totalActivity": "11:05:45"
+  },
+  {
+    "user": "Stephen Strange",
+    "_id": "001234574S",
+    "course": "RS103",
+    "role": "STUDENT",
+    "lastActivity": "2020-10-14",
+    "totalActivity": "10:20:14"
+  },
+  {
+    "user": "James Rhodes",
+    "_id": "001234575S",
+    "course": "RS101",
+    "role": "STUDENT",
+    "lastActivity": "2020-10-15",
+    "totalActivity": "12:30:25"
+  },
+  {
+    "user": "Sam Wilson",
+    "_id": "001234576S",
+    "course": "RS104",
+    "role": "STUDENT",
+    "lastActivity": "2020-10-16",
+    "totalActivity": "09:45:35"
+  },
+  {
+    "user": "Shuri",
+    "_id": "001234577S",
+    "course": "RS101",
+    "role": "STUDENT",
+    "lastActivity": "2020-10-17",
+    "totalActivity": "07:50:11"
+  },
+  {
+    "user": "Bucky Barnes",
+    "_id": "001234578S",
+    "course": "RS102",
+    "role": "STUDENT",
+    "lastActivity": "2020-10-18",
+    "totalActivity": "10:15:55"
+  },
+  {
+    "user": "Pepper Potts",
+    "_id": "001234579S",
+    "course": "RS101",
+    "role": "STUDENT",
+    "lastActivity": "2020-10-19",
+    "totalActivity": "11:40:22"
+  },
+  {
+    "user": "Clint Barton",
+    "_id": "001234580S",
+    "course": "RS103",
+    "role": "STUDENT",
+    "lastActivity": "2020-10-20",
+    "totalActivity": "09:25:48"
   }
 ]
