@@ -161,56 +161,60 @@ export default function AssignmentEditor() {
             </label>
           </div>
           <div className="col-8">
-            <div className="row m-1">
-              <label htmlFor="wd-assign-to" className="form-label">
-                <strong>Assign to</strong>
-              </label>
-              <select
-                id="multi-select"
-                className="form-select"
-                aria-label="Dropdown"
-              >
-                <option value="option1">Everyone</option>
-                <option value="option2">Selected</option>
-              </select>
-            </div>
-            <div className="row m-1">
-              <label htmlFor="wd-due-date" className="form-label">
-                <strong>Due Date</strong>
-              </label>
-              <input
-                type="datetime-local"
-                className="form-control"
-                id="due-date"
-                value={dueDate}
-                onChange={(e) => setDueDate(e.target.value)}
-              />
-            </div>
-            <div className="row">
-              {/* Available From */}
-              <div className="col-md-6 mb-3">
-                <label htmlFor="wd-available-from" className="form-label">
-                  <strong>Available From</strong>
+            <div className="card border-grey p-3">
+              <div className="row mb-3">
+                <label htmlFor="wd-assign-to" className="form-label">
+                  <strong>Assign to</strong>
+                </label>
+                <select
+                  id="multi-select"
+                  className="form-select"
+                  aria-label="Dropdown"
+                >
+                  <option value="option1">Everyone</option>
+                  <option value="option2">Selected</option>
+                </select>
+              </div>
+
+              <div className="row mb-3">
+                <label htmlFor="wd-due-date" className="form-label">
+                  <strong>Due Date</strong>
                 </label>
                 <input
                   type="datetime-local"
                   className="form-control"
-                  id="available-from"
-                  value={availableDate}
-                  onChange={(e) => setAvailableDate(e.target.value)}
+                  id="due-date"
+                  value={dueDate}
+                  onChange={(e) => setDueDate(e.target.value)}
                 />
               </div>
 
-              {/* Available Until */}
-              <div className="col-md-6 mb-3">
-                <label htmlFor="wd-available-to" className="form-label">
-                  <strong>Until</strong>
-                </label>
-                <input
-                  type="datetime-local"
-                  className="form-control"
-                  id="available-to"
-                />
+              <div className="row justify-content-between">
+                {/* Available From */}
+                <div className="col-md-6 mb-3 p-2">
+                  <label htmlFor="wd-available-from" className="form-label">
+                    <strong>Available From</strong>
+                  </label>
+                  <input
+                    type="datetime-local"
+                    className="form-control"
+                    id="available-from"
+                    value={availableDate}
+                    onChange={(e) => setAvailableDate(e.target.value)}
+                  />
+                </div>
+
+                {/* Available Until */}
+                <div className="col-md-6 mb-3 p-2">
+                  <label htmlFor="wd-available-to" className="form-label">
+                    <strong>Until</strong>
+                  </label>
+                  <input
+                    type="datetime-local"
+                    className="form-control"
+                    id="available-to"
+                  />
+                </div>
               </div>
             </div>
           </div>
