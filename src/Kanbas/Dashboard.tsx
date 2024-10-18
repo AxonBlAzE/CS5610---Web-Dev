@@ -21,7 +21,12 @@ export default function Dashboard() {
                   className="wd-dashboard-course-link text-decoration-none text-dark"
                 >
                   <img
-                    src="https://miro.medium.com/v2/1*K0a7xINk0RM5gfXGSN68cw.png"
+                    // src="https://miro.medium.com/v2/1*K0a7xINk0RM5gfXGSN68cw.png"
+                    src={
+                      course.img
+                        ? require(`./Database/imgs/${course.img}`)
+                        : "https://miro.medium.com/v2/1*K0a7xINk0RM5gfXGSN68cw.png"
+                    }
                     width="100%"
                     height={160}
                   />
